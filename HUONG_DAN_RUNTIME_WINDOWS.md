@@ -37,7 +37,7 @@ $packages = @(
 ## 2. Kiểm tra GPU
 
 ```powershell
-Set-Location 'C:\tool'
+Set-Location 'F:\youtube\tool\srtTool'
 & .\.venv\Scripts\python.exe .\windows_srt.py --check-gpu
 ```
 
@@ -46,8 +46,8 @@ Lệnh cần in tên GTX 1060, phiên bản PyTorch `2.8.0+cu126` và `int8_floa
 ## 3. Chọn thư mục và chạy
 
 ```powershell
-Set-Location 'C:\tool'
-& .\.venv\Scripts\python.exe -u .\windows_srt.py
+Set-Location 'F:\youtube\tool\srtTool'
+& .\.venv\Scripts\python.exe -u .\windows_srt_standalone.py
 ```
 
 1. Chọn thư mục chứa WAV và thư mục lưu kết quả trong cửa sổ. Script đọc các tệp `.wav` nằm trực tiếp trong thư mục, theo thứ tự tên.
